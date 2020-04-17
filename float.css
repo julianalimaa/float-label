@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+            
+}
+
+.caixa {
+    width: 40%;
+    margin: 9% auto;
+    padding: 2em;;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0 #9e9e9e;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.input-group {
+  position: relative;
+  width: 50%;
+  margin: 5% 25%;
+  padding: 3px 0;
+}
+
+input {
+  font-size: 18px;
+  padding: 15px 10px;
+  display: inline-block;
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: #dddddd;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #444444;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color:  #413d3d;
+}
+
+.bar {
+  position: relative;
+  display:block;
+  width:100%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background:  #413d3d;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+
+.botao-informacoes {
+    width: 50%;
+	padding: 1em 0;
+	background: darkorange;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 2px;
+	transition: 0.5s all;
+    cursor: pointer;
+    margin: 1em 0;
+}
+
+.botao-informacoes:hover {
+    transform: scale(1.05);
+}
+
